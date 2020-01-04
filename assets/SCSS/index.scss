@@ -4,6 +4,9 @@ $offwhite: #f9fbef;
 $font:'Philosopher', sans-serif;
 
 
+//background-image: linear-gradient(to bottom, #02011e, #4b3745, #897373, #c1b8b1, #fffffd);
+
+
 // CC RESET
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
@@ -56,8 +59,24 @@ table {
 
 // CC RESET END
 
+//TESTING BACKGROUND COLOR
+
+/* panel styles */
+.panel {
+ /* min height incase content is higher than window height */
+ min-height: 100vh;
+}
+
+/* colours */
+.color-white {
+ background-color: #FFFFFD;
+}
+
+//END TESTING COLOR
+
 body {
  background-color: $mainblue;
+ transition: background-color 1s ease;
 }
 
 //margins left and right MOBILE VERSION
@@ -120,7 +139,7 @@ body {
 
 .navbar {
  // background-color: $mainpurple;
- padding-top: 40px;
+ margin-top: 40px;
  padding-bottom:10px ;
 
  //height:100vh; /* change how big the pink bg when opening menu */
@@ -170,9 +189,15 @@ body {
 }
 
 .activecolor {
- background-color: $mainpurple;
- height:100vh; /* change how big the pink bg when opening menu */
+ //background-color: $mainpurple;
+ height: 94.5vh; /* change how big the pink bg when opening menu */
  position: relative;
+ overflow: hidden;
+}
+
+.navbarbackground{
+ background-color: $mainpurple;
+ overflow: hidden;
 }
 
 

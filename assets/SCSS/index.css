@@ -52,8 +52,20 @@ table {
   border-spacing: 0;
 }
 
+/* panel styles */
+.panel {
+  /* min height incase content is higher than window height */
+  min-height: 100vh;
+}
+
+/* colours */
+.color-white {
+  background-color: #FFFFFD;
+}
+
 body {
   background-color: #02011e;
+  transition: background-color 1s ease;
 }
 
 .main-wrapper {
@@ -104,7 +116,7 @@ body {
 }
 
 .navbar {
-  padding-top: 40px;
+  margin-top: 40px;
   padding-bottom: 10px;
 }
 
@@ -149,10 +161,15 @@ body {
 }
 
 .activecolor {
-  background-color: #e1bbff;
-  height: 100vh;
+  height: 94.5vh;
   /* change how big the pink bg when opening menu */
   position: relative;
+  overflow: hidden;
+}
+
+.navbarbackground {
+  background-color: #e1bbff;
+  overflow: hidden;
 }
 
 @media (min-width: 500px) {
