@@ -1,0 +1,181 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  background-color: #02011e;
+}
+
+.main-wrapper {
+  border: 1px solid pink;
+  margin: 0px 20px 0px 20px;
+}
+
+.menu {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.menu div {
+  width: 40px;
+  height: 5px;
+  background-color: #f9fbef;
+  margin: 8px 0;
+  border-radius: 20px;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+/* Rotate first bar */
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-10px, 10px);
+  transform: rotate(-45deg) translate(-10px, 10px);
+}
+
+/* Fade out the second bar */
+.change .bar2 {
+  opacity: 0;
+}
+
+/* Rotate last bar */
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-7px, -10px);
+  transform: rotate(45deg) translate(-7px, -10px);
+}
+
+.navimage {
+  height: 42px;
+}
+
+.navbar {
+  padding-top: 40px;
+  padding-bottom: 10px;
+}
+
+.main-nav {
+  list-style-type: none;
+  display: none;
+  /* not visible by default > with javascript visible */
+  margin: 0;
+  position: absolute;
+  /* top: 50%; */
+  top: 50%;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  width: 600px;
+}
+
+.nav-links {
+  text-decoration: none;
+  color: #f9fbef;
+}
+
+.nav-links:hover {
+  color: #02011e;
+}
+
+.main-nav li {
+  text-align: center;
+  margin: 15px auto;
+  font-weight: 700;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+}
+
+.displayflexnavelement {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* toggle navbar */
+.active {
+  display: block;
+}
+
+.activecolor {
+  background-color: #e1bbff;
+  height: 100vh;
+  /* change how big the pink bg when opening menu */
+  position: relative;
+}
+
+@media (min-width: 500px) {
+  .main-nav li {
+    text-align: center;
+    margin: 15px auto;
+    font-weight: 700;
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+  }
+}
+@media (min-width: 700px) {
+  .main-wrapper {
+    margin: 0px 60px 0px 60px;
+  }
+
+  .main-nav li {
+    text-align: center;
+    margin: 15px auto;
+    font-weight: 700;
+    font-size: 4.3rem;
+    letter-spacing: 2px;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */

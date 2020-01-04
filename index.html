@@ -2,11 +2,62 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="keywords" content="Graphic Designer, Developer, programming">
+    <meta name="author" content="Reyes-Guttmann-Nicole">
+    <link href="https://fonts.googleapis.com/css?family=Philosopher:400,400i,700,700i&display=swap" rel="stylesheet">
     <title>Portfolio Nicole</title>
+
+
+    <!-- SCRIPT-->
+    <script src="parallax.js"></script>
+
+    <!-- STYLESHEETS -->
+    <link rel="stylesheet" href="assets/SCSS/index.css">
 
 </head>
 <body>
 
-<h1>TEST </h1>
+<section class="main-wrapper">
+
+    <section class="nav-container navbar">
+
+        <div class="displayflexnavelement">
+
+            <a href="index.html">
+                <img class="navimage pad" src="assets/IMG/logonavwhite.png" alt="purple logo">
+            </a>
+            <div class="menu navbar-toggle pad" id="js-navbar-toggle" onclick="cancelIcon(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+
+        </div>
+
+        <ul class="main-nav" id="js-menu">
+            <li>
+                <a href="#" class="nav-links">Web Development</a>
+            </li>
+
+            <li>
+                <a href="#" class="nav-links">Graphic Design</a>
+            </li>
+
+            <li>
+                <a href="#" class="nav-links">My timeline</a>
+            </li>
+        </ul>
+
+    </section>
+
+</section>
+
+
+<script src="assets/JS/navbar.js"></script>
+
+
 </body>
 </html>
