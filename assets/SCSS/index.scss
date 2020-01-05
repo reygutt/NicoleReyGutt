@@ -1,7 +1,8 @@
 $mainblue: #02011e;
 $mainpurple: #e1bbff;
 $offwhite: #f9fbef;
-$font:'Philosopher', sans-serif;
+$font: 'Philosopher', sans-serif;
+$fontbody: 'Open Sans', sans-serif;
 
 
 //background-image: linear-gradient(to bottom, #02011e, #4b3745, #897373, #c1b8b1, #fffffd);
@@ -26,35 +27,41 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
- margin: 0;
- padding: 0;
- border: 0;
- font-size: 100%;
- font: inherit;
- vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
- display: block;
+  display: block;
 }
+
 body {
- line-height: 1;
+  line-height: 1;
 }
+
 ol, ul {
- list-style: none;
+  list-style: none;
 }
+
 blockquote, q {
- quotes: none;
+  quotes: none;
 }
+
 blockquote:before, blockquote:after,
 q:before, q:after {
- content: '';
- content: none;
+  content: '';
+  content: none;
 }
+
 table {
- border-collapse: collapse;
- border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 // CC RESET END
@@ -62,274 +69,333 @@ table {
 //TESTING BACKGROUND COLOR
 
 /* panel styles */
+
 .panel {
- /* min height incase content is higher than window height */
- min-height: 100vh;
+  /* min height incase content is higher than window height */
+  min-height: 100vh;
 }
 
 /* colours */
 .color-white {
- background-color: #FFFFFD;
+  background-color: #FFFFFD;
 }
 
 //END TESTING COLOR
 
 body {
- background-color: $mainblue;
- transition: background-color 1s ease;
+  background-color: $mainblue;
+  transition: background-color 1s ease;
 }
 
 //margins left and right MOBILE VERSION
 .main-wrapper {
- //border: 1px solid pink;
- margin: 0px 20px 0px 20px;
+  //border: 1px solid pink;
+  margin: 0px 20px 0px 20px;
 }
 
 //for NAVBAR
 //MENU HAMBURGER
 
 .menu {
- display: inline-block;
- cursor: pointer;
- //padding-right: 20px;
+  display: inline-block;
+  cursor: pointer;
+  //padding-right: 20px;
 }
 
 .menu {
- div{
-  width: 37px;
-  height: 3.5px;
-  background-color: #f9fbef;
-  margin: 7px 0;
-  border-radius: 20px;
- }
+  div {
+    width: 37px;
+    height: 3.5px;
+    background-color: #f9fbef;
+    margin: 7px 0;
+    border-radius: 20px;
+  }
 }
 
 .bar1, .bar2, .bar3 {
- width: 35px;
- height: 5px;
- background-color: #333;
- margin: 6px 0;
- transition: 0.4s;
+  width: 35px;
+  height: 5px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.4s;
 }
 
 /* Rotate first bar */
 .change .bar1 {
- -webkit-transform: rotate(-45deg) translate(-10px, 10px) ;
- transform: rotate(-45deg) translate(-10px, 10px) ;
+  -webkit-transform: rotate(-45deg) translate(-10px, 10px);
+  transform: rotate(-45deg) translate(-10px, 10px);
 }
 
 /* Fade out the second bar */
 .change .bar2 {
- opacity: 0;
+  opacity: 0;
 }
 
 /* Rotate last bar */
 .change .bar3 {
- -webkit-transform: rotate(45deg) translate(-7px, -10px) ;
- transform: rotate(45deg) translate(-7px, -10px) ;
+  -webkit-transform: rotate(45deg) translate(-7px, -10px);
+  transform: rotate(45deg) translate(-7px, -10px);
 }
 
 
 .navimage {
- height: 32px;
- margin-top: 3px;
- //padding-left: 20px;
+  height: 32px;
+  margin-top: 3px;
+  //padding-left: 20px;
 }
 
 
 .navbar {
- // background-color: $mainpurple;
- margin-top: 40px;
- padding-bottom:10px ;
+  // background-color: $mainpurple;
+  margin-top: 40px;
+  padding-bottom: 10px;
 
- //height:100vh; /* change how big the pink bg when opening menu */
+  //height:100vh; /* change how big the pink bg when opening menu */
 }
 
 .main-nav {
- list-style-type: none;
-// padding-left: 0;
- display: none;  /* not visible by default > with javascript visible */
- //margin: auto;
- //padding-top: 190px;
- margin: 0;
- position: absolute;
- /* top: 50%; */
- top: 40%;
- transform: translate(-50%, -50%);
- left: 50%;
- width: 600px;
+  list-style-type: none;
+  // padding-left: 0;
+  display: none; /* not visible by default > with javascript visible */
+  //margin: auto;
+  //padding-top: 190px;
+  margin: 0;
+  position: absolute;
+  /* top: 50%; */
+  top: 40%;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  width: 600px;
 }
 
 .nav-links {
- text-decoration: none;
- color:$offwhite;
+  text-decoration: none;
+  color: $offwhite;
 }
 
 .nav-links:hover {
- color:$mainblue;
+  color: $mainblue;
 }
 
 .main-nav li {
- text-align: center;
- margin: 15px auto;
- font-weight: 700;
- font-size: 2rem;
- letter-spacing: 2px;
+  text-align: center;
+  margin: 15px auto;
+  font-family: $fontbody;
+  font-weight: 700;
+  font-size: 1.7rem;
+  letter-spacing: 2px;
 }
 
 .displayflexnavelement {
- display:flex;
- justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 
 }
+
 /* toggle navbar */
 
 .active {
- display: block;
+  display: block;
 }
 
 .activecolor {
- //background-color: $mainpurple;
- height: 94.5vh; /* change how big the pink bg when opening menu */
- position: relative;
- overflow: hidden;
+  //background-color: $mainpurple;
+  height: 94.5vh; /* change how big the pink bg when opening menu */
+  position: relative;
+  overflow: hidden;
 }
 
-.navbarbackground{
- background-color: $mainpurple;
- overflow: hidden;
+.navbarbackground {
+  background-color: $mainpurple;
+  overflow: hidden;
 }
 
 //SVG LOGO
 
 //HERE STARTS CODING FOR THE LOGO ANIMATION
 #logo {
- width: 300px;
- position: absolute;
- top: 50%;
- left: 50%;
- transform: translate(-50%, -50%);
- animation: fill 0.5s ease forwards 3s;
+  width: 300px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: fill 0.5s ease forwards 3s;
 }
 
 #logo path:nth-child(1) {
- animation: transparency-letter 6s ease forwards 0s;
+  animation: transparency-letter 6s ease forwards 0s;
 
 }
 
 #logo path:nth-child(2) {
- stroke-dasharray: 3295px;
- stroke-dashoffset: 3295px;
- animation: line-anim 3s ease forwards;
+  stroke-dasharray: 3295px;
+  stroke-dashoffset: 3295px;
+  animation: line-anim 3s ease forwards;
 }
 
 #logo-disappear {
- -webkit-animation: cssAnimation 6s forwards;
- animation: cssAnimation 6s forwards;
+  -webkit-animation: cssAnimation 6s forwards;
+  animation: cssAnimation 6s forwards;
 }
 
 //TO ANIMATE THE LINES
 
 @keyframes cssAnimation {
- 0%   {opacity: 1;}
- 90%  {opacity: 1;}
- 100% {opacity: 0;}
+  0% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
+
 @-webkit-keyframes cssAnimation {
- 0%   {opacity: 1;}
- 90%  {opacity: 1;}
- 100% {opacity: 0;}
+  0% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
 @keyframes line-anim {
- to {
-  stroke-dashoffset: 0;
- }
+  to {
+    stroke-dashoffset: 0;
+  }
 }
 
 @keyframes fill {
 
- from {
-  fill: transparent;
- }
+  from {
+    fill: transparent;
+  }
 
- to {
-  fill: $mainpurple;
- }
+  to {
+    fill: $mainpurple;
+  }
 
 
 }
 
 @keyframes transparency-letter {
 
- 0% {
-  opacity: 0;
- }
- 50% {
-  opacity: 0;
- }
- 100% {
-  opacity: 1;
- }
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 
 }
 
 @media only screen and (max-width: 400px) {
 
- #logo {
-  width: 200px;
- }
+  #logo {
+    width: 200px;
+  }
 }
 
 
 //INTRODUCTION TEXT
 
 .intro {
- position: relative;
- height: 100vh;
+  position: relative;
+  height: 100vh;
 
 }
 
 .text-container {
- position: absolute;
- left: 50%;
- transform: translate(-50%, 50%);
- width: 243px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  width: 243px;
 }
 
 .intro-text {
- opacity: 0;
- color: $offwhite;
- font-family: $font;
- font-size: 23px;
- letter-spacing: 2px;
- //padding-left: 70px;
- span {
-  color:$mainpurple;
- }
+  opacity: 0;
+  color: $offwhite;
+  font-family: $font;
+  font-size: 23px;
+  letter-spacing: 2px;
+  //padding-left: 70px;
+  span {
+    color: $mainpurple;
+  }
 }
 
 .intro-text-animation {
- animation: text-animation 2s;
+  animation: text-animation 2s;
 }
 
 @keyframes text-animation {
- from {
-  opacity: 0;
- }
- to {
-  opacity: 1;
- }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 //INTRODUCTION TEXT END
 
 
+.sticky-container {
+  color: $mainpurple;
+  position: -webkit-sticky;
+  position: sticky;
+  font-family: $fontbody;
+  font-weight: 400;
+  top: 80%;
+  right: 0;
+  justify-content: right;
+  text-align: right;
+  padding-right: 20px;
+  overflow: hidden;
+  z-index: 20;
 
+  p {
+    margin-bottom: 20px;
 
+    a {
+      text-decoration: none;
+      color: $mainpurple;
+    }
 
+    a:visited {
+      text-decoration: none;
+    }
+  }
+}
 
+a.left {
+  position: relative;
+}
 
+a.left:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background-color: #FFF;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+a.left:hover:before {
+  visibility: visible;
+  width: 100%;
+}
 
 
 //MEDIUM SCREENS
@@ -337,33 +403,38 @@ body {
 @media (min-width: 500px) {
 
 
- .main-nav li {
-  text-align: center;
-  margin: 15px auto;
-  font-weight: 700;
-  font-size: 3.5rem;
-  letter-spacing: 2px;
- }
-
-
- .navimage {
-  height: 42px;
-  margin-top: 0;
-  //padding-left: 20px;
- }
-
-
- .menu {
-  div{
-   width: 40px;
-   height: 5px;
-   background-color: $offwhite;
-   margin: 8px 0;
-   border-radius: 20px;
+  .main-nav li {
+    text-align: center;
+    margin: 15px auto;
+    font-weight: 700;
+    font-size: 2.9rem;
+    letter-spacing: 2px;
   }
- }
 
 
+  .navimage {
+    height: 42px;
+    margin-top: 0;
+    //padding-left: 20px;
+  }
+
+
+  .menu {
+    div {
+      width: 40px;
+      height: 5px;
+      background-color: $offwhite;
+      margin: 8px 0;
+      border-radius: 20px;
+    }
+  }
+
+  .intro-text {
+    font-size: 36px;
+  }
+  .text-container {
+    width: 356px;
+  }
 
 
 }
@@ -372,18 +443,46 @@ body {
 
 @media (min-width: 700px) {
 
-.main-wrapper {
- margin: 0px 60px 0px 60px;
- }
+  .main-wrapper {
+    margin: 0px 60px 0px 60px;
+  }
 
 
- .main-nav li {
-  text-align: center;
-  margin: 15px auto;
-  font-weight: 700;
-  font-size: 4.3rem;
-  letter-spacing: 2px;
- }
+  .main-nav li {
+    text-align: center;
+    margin: 15px auto;
+    font-weight: 700;
+    font-size: 3.5rem;
+    letter-spacing: 2px;
+  }
+
+  .sticky-container {
+    padding-right: 60px;
+
+
+    p {
+     margin-bottom: 20px;
+    }
+  }
+
+  .intro-text {
+    font-size: 57px;
+  }
+  .text-container {
+    width: 539px;
+  }
+
+}
+
+//BIGGEST
+@media (min-width: 1000px) {
+
+  .intro-text {
+    font-size: 67px;
+  }
+  .text-container {
+    width: 626px;
+  }
 
 }
 
