@@ -1,6 +1,7 @@
 $mainblue: #02011e;
 $mainpurple: #e1bbff;
 $offwhite: #f9fbef;
+$lightblue: #37a5eb;
 $font: 'Philosopher', sans-serif;
 $fontbody: 'Open Sans', sans-serif;
 
@@ -65,6 +66,40 @@ table {
 }
 
 // CC RESET END
+
+
+//HERE STARTS THE STARS PARALLAX EFFECT
+.container{
+  width: 110%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  overflow-x: hidden;
+  z-index: -9;
+}
+.text-container{
+  width: 100%;
+  max-width: 1200px;
+}
+#scene {
+  //width: 100vw;
+  //border: 5px solid deeppink;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+
+#scene {
+  img {
+    position: absolute;
+    width: 100%;
+  }
+}
+// For editing parallax effects go to https://github.com/wagerfield/parallax#22-configuration-options
+
 
 //TESTING BACKGROUND COLOR
 
@@ -166,7 +201,7 @@ body {
   transform: translate(-50%, -50%);
   left: 50%;
   width: 600px;
- z-index: 40;
+  z-index: 40;
 }
 
 .nav-links {
@@ -348,7 +383,7 @@ body {
 
 //INTRODUCTION TEXT END
 
-
+//STICKY CONTAINER
 .sticky-container {
   color: $mainpurple;
   position: -webkit-sticky;
@@ -398,6 +433,128 @@ a.left:hover:before {
   width: 100%;
 }
 
+//END STICKY CONTAINER
+
+//TIMELINE START
+
+.tl-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.tl-img {
+//  border: 1px solid red;
+  width: 394px;
+}
+
+.tl-text-container {
+  padding-left:20px;
+  color: $lightblue;
+//  border: 1px solid red;
+  //width: 300px;
+  //for items inside
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: flex-start;
+}
+
+.tl-title-container{
+  //for items inside
+  display: flex;
+  align-items: flex-start;
+  align-content: center;
+
+  margin-top: 30px;
+
+
+
+  h4 {
+    font-family: $font;
+    font-weight: 800;
+    letter-spacing: 2px;
+    font-size: 1.5rem;
+    padding: 10px 10px 10px 0;
+
+  }
+
+  div{
+    padding: 10px;
+    margin-top: 8px;
+    background-color: rgba(55,165,235,0.2);
+    border-radius: 5px;
+    font-family: $fontbody;
+    font-weight: 400;
+    letter-spacing: 2px;
+    font-size: 12px;
+  }
+}
+
+.tl-text {
+  font-family: $fontbody;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1px;
+
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+  span{
+    background-color: rgba(55,165,235,0.2) ;
+  }
+}
+
+.tl-skillstitle{
+  font-family: $fontbody;
+  font-weight: 700;
+
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.skills-rows{
+  display: flex;
+  align-items: flex-start;
+  align-content: flex-start;
+  height: 500px;
+}
+
+.tl-row{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: center;
+
+
+
+  div{
+       font-family: $fontbody;
+       letter-spacing: 2px;
+       background-color: rgba(55,165,235,0.2);
+       padding: 10px;
+       border-radius: 5px;
+
+       margin-bottom: 20px;
+       margin-right: 10px;
+       text-align: center;
+     }
+
+  div:hover{
+
+    background-color: rgba(55,165,235,0.5);
+
+  }
+
+}
+
+
+
+//TIMELINE END
 
 //MEDIUM SCREENS
 
@@ -437,6 +594,10 @@ a.left:hover:before {
     width: 356px;
   }
 
+  .tl-img {
+    width: 500px;
+  }
+
 
 }
 
@@ -462,7 +623,7 @@ a.left:hover:before {
 
 
     p {
-     margin-bottom: 20px;
+      margin-bottom: 20px;
     }
   }
 
@@ -472,6 +633,16 @@ a.left:hover:before {
   .text-container {
     width: 539px;
   }
+
+  .tl-img {
+    width: 730px;
+  }
+
+  .tl-title-container h4 {
+    font-size: 2.5rem;
+  }
+
+
 
 }
 

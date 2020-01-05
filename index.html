@@ -13,7 +13,7 @@
 
 
     <!-- SCRIPT-->
-    <script src="parallax.js"></script>
+    <script src="assets/JS/parallax.js"></script>
 
 
     <!-- STYLESHEETS -->
@@ -86,13 +86,138 @@
 
     <div class="panel" data-color="white">
 
+        <main class="main-wrapper">
+
+<!--   BOX 1        -->
+            <section class="tl-box">
+
+                <img class="tl-img" src="assets/IMG/line-art-03.png">
+
+                <div class="tl-text-container">
+
+                    <div class="tl-title-container">
+                        <h4>High School</h4>
+                        <div>2015-2016</div>
+                    </div>
+
+                   <!-- <p class="tl-text">I graduated from high school in
+                        <span>Sint-Jan Berchmanscollege (Brussels) </span> in Economy & Modern
+                        languages.</p>-->
+
+                    <p class="tl-skillstitle">Skills obtained:</p>
+                    <div class="skills-rows">
+                        <div class="tl-row">
+                            <div><p>French</p></div>
+                            <div><p>English</p></div>
+                            <div><p>German(basic)</p></div>
+                        </div>
+                        <div class="tl-row">
+                            <div><p>Stress management</p></div>
+                            <div><p>French</p></div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <!--   BOX 2        -->
 
 
-        <h2>Blue panel</h2>
+            <section class="tl-box">
+
+                <img class="tl-img" src="assets/IMG/line-art.png">
+
+                <div class="tl-text-container">
+
+                    <div class="tl-title-container">
+                        <h4>Australian gap year</h4>
+                        <div>2015-2016</div>
+                    </div>
+
+
+                    <p class="tl-skillstitle">Skills obtained:</p>
+                    <div class="skills-rows">
+                        <div class="tl-row">
+                            <div><p>Research & Planning</p></div>
+                            <div><p>Time management</p></div>
+                            <div><p>Communication skills</p></div>
+                        </div>
+                        <div class="tl-row">
+                            <div><p>Adaptability</p></div>
+                            <div><p>Scuba diving</p></div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+
+            <!--   BOX 3        -->
+            <section class="tl-box">
+
+                <img class="tl-img" src="assets/IMG/line-art-02.png">
+
+                <div class="tl-text-container">
+
+                    <div class="tl-title-container">
+                        <h4>Bachelor of Arts</h4>
+                        <div>2015-2016</div>
+                    </div>
+
+                    <p class="tl-skillstitle">Skills obtained:</p>
+                    <div class="skills-rows">
+                        <div class="tl-row">
+                            <div><p>Illustrator</p></div>
+                            <div><p>Photoshop</p></div>
+                            <div><p>inDesign</p></div>
+                        </div>
+                        <div class="tl-row">
+                            <div><p>After Effects</p></div>
+                            <div><p>Adobe XD</p></div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <!--   BOX  4       -->
+            <section class="tl-box">
+
+                <img class="tl-img" src="assets/IMG/line-art-04.png">
+
+                <div class="tl-text-container">
+
+                    <div class="tl-title-container">
+                        <h4>Web Developer course</h4>
+                        <div>2015-2016</div>
+                    </div>
+
+
+                    <p class="tl-skillstitle">Skills obtained:</p>
+                    <div class="skills-rows">
+                        <div class="tl-row">
+                            <div><p>French</p></div>
+                            <div><p>English</p></div>
+                            <div><p>German(basic)</p></div>
+                        </div>
+                        <div class="tl-row">
+                            <div><p>Stress management</p></div>
+                            <div><p>French</p></div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
     </div>
 
 </section>
-
 
 
 <!-- LOGO SVG START -->
@@ -117,6 +242,20 @@
         </span>
 
 
+<!--   CODE FOR PARALLAX-->
+<div class="container">
+
+    <div id="scene">
+        <img class="layer stars" data-depth="1" id="stars_big" src="assets/IMG/bigstars-01.png" alt="bigstars image">
+        <img class="layer stars" data-depth="2" id="stars-small" src="assets/IMG/smallstars-01.png" alt="stars image">
+    </div>
+
+    <script>
+        var scene = document.getElementById('scene');
+        var parallax = new Parallax(scene);
+    </script>
+</div>
+
 
 <script src="assets/JS/navbar.js"></script>
 <script src="assets/JS/animation-introduction.js"></script>
@@ -130,5 +269,7 @@
 
 
 <script src="assets/JS/backgroundcolor.js"></script>
+
+
 </body>
 </html>
