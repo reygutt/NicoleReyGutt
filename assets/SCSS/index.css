@@ -69,7 +69,6 @@ body {
 }
 
 .main-wrapper {
-  border: 1px solid pink;
   margin: 0px 20px 0px 20px;
 }
 
@@ -79,10 +78,10 @@ body {
 }
 
 .menu div {
-  width: 40px;
-  height: 5px;
+  width: 37px;
+  height: 3.5px;
   background-color: #f9fbef;
-  margin: 8px 0;
+  margin: 7px 0;
   border-radius: 20px;
 }
 
@@ -112,7 +111,8 @@ body {
 }
 
 .navimage {
-  height: 42px;
+  height: 32px;
+  margin-top: 3px;
 }
 
 .navbar {
@@ -127,7 +127,7 @@ body {
   margin: 0;
   position: absolute;
   /* top: 50%; */
-  top: 50%;
+  top: 40%;
   transform: translate(-50%, -50%);
   left: 50%;
   width: 600px;
@@ -146,7 +146,7 @@ body {
   text-align: center;
   margin: 15px auto;
   font-weight: 700;
-  font-size: 1.5rem;
+  font-size: 2rem;
   letter-spacing: 2px;
 }
 
@@ -172,13 +172,136 @@ body {
   overflow: hidden;
 }
 
+#logo {
+  width: 300px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: fill 0.5s ease forwards 3s;
+}
+
+#logo path:nth-child(1) {
+  animation: transparency-letter 6s ease forwards 0s;
+}
+
+#logo path:nth-child(2) {
+  stroke-dasharray: 3295px;
+  stroke-dashoffset: 3295px;
+  animation: line-anim 3s ease forwards;
+}
+
+#logo-disappear {
+  -webkit-animation: cssAnimation 6s forwards;
+  animation: cssAnimation 6s forwards;
+}
+
+@keyframes cssAnimation {
+  0% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes cssAnimation {
+  0% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes line-anim {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes fill {
+  from {
+    fill: transparent;
+  }
+  to {
+    fill: #e1bbff;
+  }
+}
+@keyframes transparency-letter {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@media only screen and (max-width: 400px) {
+  #logo {
+    width: 200px;
+  }
+}
+.intro {
+  position: relative;
+  height: 100vh;
+}
+
+.text-container {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  width: 243px;
+}
+
+.intro-text {
+  opacity: 0;
+  color: #f9fbef;
+  font-family: "Philosopher", sans-serif;
+  font-size: 23px;
+  letter-spacing: 2px;
+}
+.intro-text span {
+  color: #e1bbff;
+}
+
+.intro-text-animation {
+  animation: text-animation 2s;
+}
+
+@keyframes text-animation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 @media (min-width: 500px) {
   .main-nav li {
     text-align: center;
     margin: 15px auto;
     font-weight: 700;
-    font-size: 2.5rem;
+    font-size: 3.5rem;
     letter-spacing: 2px;
+  }
+
+  .navimage {
+    height: 42px;
+    margin-top: 0;
+  }
+
+  .menu div {
+    width: 40px;
+    height: 5px;
+    background-color: #f9fbef;
+    margin: 8px 0;
+    border-radius: 20px;
   }
 }
 @media (min-width: 700px) {
