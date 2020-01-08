@@ -6,7 +6,7 @@ $(window).scroll(function() {
         $panel = $('.panel');
 
     // Change 33% earlier than scroll position so colour is there when you arrive.
-    var scroll = $window.scrollTop() + ($window.height() / 3);
+    var scroll = $window.scrollTop() + ($window.height() / 4);
 
     $panel.each(function () {
         var $this = $(this);
@@ -23,6 +23,11 @@ $(window).scroll(function() {
 
             // Add class of currently active div
             $body.addClass('color-' + $(this).data('color'));
+
+            // toggle
+
+            //document.getElementById('container').style.display='none';
+
         }
     });
 

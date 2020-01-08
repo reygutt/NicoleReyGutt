@@ -98,22 +98,21 @@ table {
     width: 100%;
   }
 }
+
+
+
 // For editing parallax effects go to https://github.com/wagerfield/parallax#22-configuration-options
 
 
 //TESTING BACKGROUND COLOR
-
-/* panel styles */
-
+/*
 .panel {
-  /* min height incase content is higher than window height */
   min-height: 100vh;
 }
 
-/* colours */
 .color-white {
-  background-color: #FFFFFD;
-}
+  background-color: $mainpurple;
+}*/
 
 //END TESTING COLOR
 
@@ -385,7 +384,7 @@ body {
 
 //STICKY CONTAINER
 .sticky-container {
-  color: $mainpurple;
+  color: #BE6CFF;
   position: -webkit-sticky;
   position: sticky;
   font-family: $fontbody;
@@ -403,7 +402,7 @@ body {
 
     a {
       text-decoration: none;
-      color: $mainpurple;
+      color: #BE6CFF;
     }
 
     a:visited {
@@ -435,122 +434,117 @@ a.left:hover:before {
 
 //END STICKY CONTAINER
 
-//TIMELINE START
-
-.tl-box {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-}
-
-.tl-img {
-//  border: 1px solid red;
-  width: 394px;
-}
-
-.tl-text-container {
-  padding-left:20px;
-  color: $lightblue;
-//  border: 1px solid red;
-  //width: 300px;
-  //for items inside
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  align-content: flex-start;
-}
-
-.tl-title-container{
-  //for items inside
-  display: flex;
-  align-items: flex-start;
-  align-content: center;
-
-  margin-top: 30px;
 
 
+//Skills
 
-  h4 {
-    font-family: $font;
-    font-weight: 800;
-    letter-spacing: 2px;
-    font-size: 1.5rem;
-    padding: 10px 10px 10px 0;
-
-  }
-
-  div{
-    padding: 10px;
-    margin-top: 8px;
-    background-color: rgba(55,165,235,0.2);
-    border-radius: 5px;
-    font-family: $fontbody;
-    font-weight: 400;
-    letter-spacing: 2px;
-    font-size: 12px;
-  }
-}
-
-.tl-text {
+h5{
+  color: $mainpurple;
+  background-color: $mainblue;
   font-family: $fontbody;
-  font-weight: 400;
-  line-height: normal;
-  letter-spacing: 1px;
-
-  margin-top: 20px;
-  margin-bottom: 20px;
-
-  span{
-    background-color: rgba(55,165,235,0.2) ;
-  }
+  font-size: 2rem;
+  margin-bottom: 30px;
+  font-weight: 500;
 }
 
-.tl-skillstitle{
+.content {
+  grid-area: content;
+  display: grid;
+  column-gap: 160px;
+  row-gap: 60px;
+  justify-content: center;
+  align-content: space-between;
+  grid-template-columns: repeat(auto-fill, minmax(190px, 230px));
+  grid-auto-rows: 265px;
+  overflow-y: hidden;
+
+}
+
+.squaresinbox {
+  background-color: #F4E5FF;
+  display: grid;
+  border-radius: 15px;
+}
+
+.construction{
+    opacity: 0.5;
+    filter: alpha(opacity=50); /* For IE8 and earlier */
+    -webkit-filter: blur(2px);
+    filter: blur(2px);
+}
+
+
+
+.txt-white {
+  font-size: 13px;
+  color: $mainblue;
   font-family: $fontbody;
+  margin: 20px;
+  align-self: start;
+  letter-spacing: 0.1em;
+  line-height: 1.3;
+}
+
+.txt-black {
+  font-family: $fontbody;
+  color: $mainblue;
   font-weight: 700;
+  font-size: 25px;
+  margin: 20px;
+  align-self: end;
+  letter-spacing: 0.1em;
+  text-decoration: underline #BE6CFF solid;
+  line-height: 1.8rem;
+}
 
-  margin-top: 20px;
+.squaresinbox {
+  ul li::before {
+    content: "\2022";
+    color: #BE6CFF;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+  }
+  ul {
+    font-size: 13px;
+    font-family: $fontbody;
+    letter-spacing: 0.1em;
+    line-height: 1.3;
+    margin: 20px;
+  }
+}
+
+.skill-link{
+
+  padding: 1em 1.5em;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: #BE6CFF ;
+  text-align: center;
+  font-family: $fontbody;
+  transition: all 0.2s cubic-bezier(.4,0,.2,1);
+  border-radius: 15px;
+  width: 145px;
+  letter-spacing: 1px;
+  font-size: 1rem;
+  justify-self: center;
   margin-bottom: 20px;
 }
 
-.skills-rows{
-  display: flex;
-  align-items: flex-start;
-  align-content: flex-start;
-  height: 500px;
+.skill-link:hover {
+  letter-spacing: 2px;
+  background-color: #9352C6;
+  color: $mainpurple;
 }
 
-.tl-row{
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-content: center;
 
 
 
-  div{
-       font-family: $fontbody;
-       letter-spacing: 2px;
-       background-color: rgba(55,165,235,0.2);
-       padding: 10px;
-       border-radius: 5px;
 
-       margin-bottom: 20px;
-       margin-right: 10px;
-       text-align: center;
-     }
 
-  div:hover{
 
-    background-color: rgba(55,165,235,0.5);
 
-  }
-
-}
+//Skills END
 
 
 
