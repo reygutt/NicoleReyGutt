@@ -290,6 +290,7 @@ body {
 }
 
 .intro-text {
+  margin-top: 40%;
   opacity: 0;
   color: #f9fbef;
   font-family: "Philosopher", sans-serif;
@@ -509,6 +510,7 @@ h5 {
 
   .intro-text {
     font-size: 36px;
+    margin-top: 0;
   }
 
   .text-container {
@@ -542,6 +544,7 @@ h5 {
 
   .intro-text {
     font-size: 57px;
+    margin-top: 0;
   }
 
   .text-container {
@@ -559,6 +562,7 @@ h5 {
 @media (min-width: 1000px) {
   .intro-text {
     font-size: 67px;
+    margin-top: 0;
   }
 
   .text-container {
