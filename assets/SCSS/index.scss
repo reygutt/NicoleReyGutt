@@ -68,10 +68,18 @@ table {
 // CC RESET END
 
 
+//background static
+
+body {
+  background-image: url("https://github.com/reygutt/NicoleReyGutt/blob/master/assets/IMG/smallstars-01copy.png?raw=true");
+}
+
 //HERE STARTS THE STARS PARALLAX EFFECT
 
+
+// wasnt fixed with this for responsiveness
 .stars{ //CHILD WIDTH DEPENDS ON PARENT
-  width: 100%;
+  //width: 100%;
 }
 
 .container{  //PARENT

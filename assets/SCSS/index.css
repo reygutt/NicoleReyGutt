@@ -53,8 +53,8 @@ table {
   border-spacing: 0;
 }
 
-.stars {
-  width: 100%;
+body {
+  background-image: url("https://github.com/reygutt/NicoleReyGutt/blob/master/assets/IMG/smallstars-01copy.png?raw=true");
 }
 
 .container {
