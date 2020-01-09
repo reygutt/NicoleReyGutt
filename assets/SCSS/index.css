@@ -328,7 +328,7 @@ body {
 }
 .sticky-container p a {
   text-decoration: none;
-  color: #BE6CFF;
+  color: #e1bbff;
 }
 .sticky-container p a:visited {
   text-decoration: none;
@@ -378,10 +378,14 @@ h5 {
 }
 
 .squaresinbox {
-  background-color: #F4E5FF;
+  background-color: #1E1E2C;
   display: grid;
   border-radius: 15px;
   position: relative;
+}
+
+.squaresinbox ul {
+  color: #D3C7DD;
 }
 
 .construction {
@@ -415,7 +419,7 @@ h5 {
 
 .txt-black {
   font-family: "Open Sans", sans-serif;
-  color: #02011e;
+  color: #D3C7DD;
   font-weight: 700;
   font-size: 25px;
   margin: 20px;
@@ -440,7 +444,12 @@ h5 {
   margin: 20px;
 }
 
+.squaresinbox:hover {
+  background-color: #363550;
+}
+
 .skill-link {
+  color: #e1bbff;
   padding: 1em 1.5em;
   text-decoration: none;
   text-transform: uppercase;
@@ -454,11 +463,16 @@ h5 {
   font-size: 1rem;
   justify-self: center;
   margin-bottom: 20px;
+  box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.2);
 }
 
 .skill-link:hover {
   letter-spacing: 2px;
   background-color: #9352C6;
+  color: #e1bbff;
+}
+
+.skill-link:visited {
   color: #e1bbff;
 }
 
