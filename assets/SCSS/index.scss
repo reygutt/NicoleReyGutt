@@ -398,7 +398,45 @@ body {
 
 //INTRODUCTION TEXT END
 
-//STICKY CONTAINER
+//STICKY CONTAINERS
+
+.sticky-container-resume{
+  background-color: #BE6CFF;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  top: 67%;
+  left: -20px;
+  text-align: right;
+  padding-right: 20px;
+  overflow: hidden;
+  z-index: 1;
+  width: 140px;
+  height: 181px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+  transform: translateX(-135px);
+
+  img{
+    width: 90px;
+    margin-left: 25px;
+  }
+}
+
+.sticky-container-resume:hover{
+  transform: translateX(0px);
+}
+
+
+
+
+
+
 .sticky-container {
   color: #BE6CFF;
   //position: -webkit-sticky;
@@ -449,6 +487,10 @@ a.left:hover:before {
   visibility: visible;
   width: 100%;
 }
+
+//resume left
+
+
 
 //END STICKY CONTAINER
 
